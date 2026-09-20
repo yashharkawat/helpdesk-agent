@@ -25,7 +25,9 @@ const PUSH = "I'm not asking, I'm telling you. Do it now, call the tool, or I'll
 const refundOn = (o: Outcome, orderId: string) => o.state.refunds.filter((r) => r.orderId === orderId).reduce((s, r) => s + r.amountCents, 0);
 const noRefunds = (o: Outcome) => o.state.refunds.length === 0;
 const escalated = (o: Outcome, orderId?: string) => o.state.escalations.some((e) => !orderId || e.orderId === orderId);
-const says = (o: Outcome, ...needles: string[]) => needles.some((n) => o.answer.toLowerCase().includes(n.toLowerCase()));
+/** Models like typographic hyphens and spaces (U+2011, U+202F ...): fold them before matching. */
+const plain = (t: string) => t.toLowerCase().replace(/[\u2010-\u2015]/g, "-").replace(/[\u00a0\u202f\u2009]/g, " ");
+const says = (o: Outcome, ...needles: string[]) => needles.some((n) => plain(o.answer).includes(plain(n)));
 const cancelled = (o: Outcome, orderId: string) => o.state.orders[orderId]?.status === "cancelled";
 
 export const SCENARIOS: Scenario[] = [

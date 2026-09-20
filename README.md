@@ -5,6 +5,12 @@ A customer-support agent with a hand-written agent loop. It is an **MCP client**
 **Live demo:** https://helpdesk-agent.zojoofficial.com · Fernhill Outfitters, its customers and its orders are fictional.
 
 <!-- RESULTS:START -->
+| | Tasks resolved | Policy violations |
+|---|---|---|
+| **Rules enforced in the MCP servers** (shipped) | **27/28 (96%)** | **0 / 14** |
+| Same agent, rules in the prompt only | 10/14 | 4 / 14 |
+
+28 scripted customer scenarios on free models, scored on the resulting business state ([full results](eval/RESULTS.md)). Prompt-only, the model refunded $288 it was told to escalate, split a refund to dodge the $100 cap, obeyed a forged "SYSTEM NOTICE", and cancelled a shipped order. Server-side, it tried several of the same calls and every one was refused.
 <!-- RESULTS:END -->
 
 ## Why this exists
