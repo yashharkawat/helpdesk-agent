@@ -1,0 +1,129 @@
+{
+  "customers": [
+    { "id": "C-1001", "name": "Maya Okafor", "email": "maya.okafor@example.com", "tier": "standard", "memberSinceDaysAgo": 400 },
+    { "id": "C-1002", "name": "Tobias Lindqvist", "email": "tobias.lindqvist@example.com", "tier": "plus", "memberSinceDaysAgo": 720 },
+    { "id": "C-1003", "name": "Priyanka Deshmukh", "email": "priyanka.deshmukh@example.com", "tier": "standard", "memberSinceDaysAgo": 95 },
+    { "id": "C-1004", "name": "Mateo Alvarez", "email": "mateo.alvarez@example.com", "tier": "standard", "memberSinceDaysAgo": 210 },
+    { "id": "C-1005", "name": "Hana Kobayashi", "email": "hana.kobayashi@example.com", "tier": "plus", "memberSinceDaysAgo": 530 },
+    { "id": "C-1006", "name": "Declan Whitehorse", "email": "declan.whitehorse@example.com", "tier": "standard", "memberSinceDaysAgo": 80 }
+  ],
+  "orders": [
+    {
+      "id": "FH-20401", "customerId": "C-1001", "placedDaysAgo": 15, "status": "delivered",
+      "deliveredDaysAgo": 10, "shipping": "standard", "carrier": "USPS", "tracking": "9400110200820401000017",
+      "items": [ { "sku": "FH-APP-114", "name": "Trailhead Merino Base Layer", "qty": 1, "priceCents": 6800, "finalSale": false } ],
+      "shippingCents": 695, "totalCents": 7495, "refundedCents": 0
+    },
+    {
+      "id": "FH-20402", "customerId": "C-1001", "placedDaysAgo": 51, "status": "delivered",
+      "deliveredDaysAgo": 45, "shipping": "standard", "carrier": "UPS", "tracking": "1ZFH4012040200002A",
+      "items": [ { "sku": "FH-ACC-330", "name": "Summit Trekking Poles", "qty": 1, "priceCents": 8900, "finalSale": false } ],
+      "shippingCents": 0, "totalCents": 8900, "refundedCents": 0
+    },
+    {
+      "id": "FH-20403", "customerId": "C-1001", "placedDaysAgo": 0, "status": "processing",
+      "deliveredDaysAgo": null, "shipping": "standard", "carrier": null, "tracking": null,
+      "items": [ { "sku": "FH-PCK-145", "name": "Cascade 45L Backpack", "qty": 1, "priceCents": 18900, "finalSale": false } ],
+      "shippingCents": 0, "totalCents": 18900, "refundedCents": 0
+    },
+    {
+      "id": "FH-20404", "customerId": "C-1001", "placedDaysAgo": 3, "status": "shipped",
+      "deliveredDaysAgo": null, "shipping": "express", "carrier": "FedEx", "tracking": "784020404001",
+      "items": [ { "sku": "FH-APP-270", "name": "Alpine Down Jacket", "qty": 1, "priceCents": 27900, "finalSale": false } ],
+      "shippingCents": 1495, "totalCents": 29395, "refundedCents": 0
+    },
+    {
+      "id": "FH-20405", "customerId": "C-1002", "placedDaysAgo": 50, "status": "delivered",
+      "deliveredDaysAgo": 45, "shipping": "standard", "carrier": "UPS", "tracking": "1ZFH4012040500005B",
+      "items": [ { "sku": "FH-FTW-420", "name": "Granite Hiking Boots", "qty": 1, "priceCents": 16500, "finalSale": false } ],
+      "shippingCents": 0, "totalCents": 16500, "refundedCents": 0
+    },
+    {
+      "id": "FH-20406", "customerId": "C-1002", "placedDaysAgo": 10, "status": "delivered",
+      "deliveredDaysAgo": 5, "shipping": "standard", "carrier": "USPS", "tracking": "9400110200820406000062",
+      "items": [ { "sku": "FH-CLR-508", "name": "Clearance Trail Socks 3-Pack", "qty": 1, "priceCents": 1800, "finalSale": true } ],
+      "shippingCents": 695, "totalCents": 2495, "refundedCents": 0
+    },
+    {
+      "id": "FH-20407", "customerId": "C-1003", "placedDaysAgo": 25, "status": "delivered",
+      "deliveredDaysAgo": 20, "shipping": "standard", "carrier": "FedEx", "tracking": "784020407003",
+      "items": [
+        { "sku": "FH-TNT-210", "name": "Ridgeline 2-Person Tent", "qty": 1, "priceCents": 24900, "finalSale": false },
+        { "sku": "FH-TNT-215", "name": "Tent Footprint", "qty": 1, "priceCents": 3900, "finalSale": false }
+      ],
+      "shippingCents": 0, "totalCents": 28800, "refundedCents": 0
+    },
+    {
+      "id": "FH-20408", "customerId": "C-1003", "placedDaysAgo": 11, "status": "delivered",
+      "deliveredDaysAgo": 6, "shipping": "standard", "carrier": "USPS", "tracking": "9400110200820408000084",
+      "items": [ { "sku": "FH-ACC-302", "name": "Insulated Water Bottle", "qty": 1, "priceCents": 3200, "finalSale": false } ],
+      "shippingCents": 695, "totalCents": 3895, "refundedCents": 0
+    },
+    {
+      "id": "FH-20409", "customerId": "C-1004", "placedDaysAgo": 17, "status": "delivered",
+      "deliveredDaysAgo": 12, "shipping": "standard", "carrier": "UPS", "tracking": "1ZFH4012040900009C",
+      "items": [ { "sku": "FH-APP-188", "name": "Packable Rain Shell", "qty": 1, "priceCents": 9900, "finalSale": false } ],
+      "shippingCents": 0, "totalCents": 9900, "refundedCents": 0
+    },
+    {
+      "id": "FH-20410", "customerId": "C-1004", "placedDaysAgo": 30, "status": "cancelled",
+      "deliveredDaysAgo": null, "shipping": "standard", "carrier": null, "tracking": null,
+      "items": [ { "sku": "FH-FTW-433", "name": "Switchback Trail Runners", "qty": 1, "priceCents": 11900, "finalSale": false } ],
+      "shippingCents": 0, "totalCents": 11900, "refundedCents": 0
+    },
+    {
+      "id": "FH-20411", "customerId": "C-1004", "placedDaysAgo": 31, "status": "delivered",
+      "deliveredDaysAgo": 25, "shipping": "standard", "carrier": "FedEx", "tracking": "784020411007",
+      "items": [ { "sku": "FH-CMP-360", "name": "Basecamp Duo Stove", "qty": 1, "priceCents": 7400, "finalSale": false } ],
+      "shippingCents": 695, "totalCents": 8095, "refundedCents": 0
+    },
+    {
+      "id": "FH-20412", "customerId": "C-1005", "placedDaysAgo": 56, "status": "delivered",
+      "deliveredDaysAgo": 50, "shipping": "standard", "carrier": "USPS", "tracking": "9400110200820412000128",
+      "items": [ { "sku": "FH-APP-121", "name": "Merino Hiking Socks 2-Pack", "qty": 2, "priceCents": 2400, "finalSale": false } ],
+      "shippingCents": 695, "totalCents": 5495, "refundedCents": 0
+    },
+    {
+      "id": "FH-20413", "customerId": "C-1005", "placedDaysAgo": 10, "status": "delivered",
+      "deliveredDaysAgo": 8, "shipping": "express", "carrier": "UPS", "tracking": "1ZFH4012041300013D",
+      "items": [ { "sku": "FH-PCK-145", "name": "Cascade 45L Backpack", "qty": 1, "priceCents": 18900, "finalSale": false } ],
+      "shippingCents": 0, "totalCents": 18900, "refundedCents": 4000
+    },
+    {
+      "id": "FH-20414", "customerId": "C-1005", "placedDaysAgo": 1, "status": "processing",
+      "deliveredDaysAgo": null, "shipping": "standard", "carrier": null, "tracking": null,
+      "items": [ { "sku": "FH-SLP-240", "name": "Featherlite Sleeping Pad", "qty": 1, "priceCents": 12900, "finalSale": false } ],
+      "shippingCents": 0, "totalCents": 12900, "refundedCents": 0
+    },
+    {
+      "id": "FH-20415", "customerId": "C-1006", "placedDaysAgo": 4, "status": "shipped",
+      "deliveredDaysAgo": null, "shipping": "standard", "carrier": "USPS", "tracking": "9400110200820415000159",
+      "items": [
+        { "sku": "FH-ACC-318", "name": "Nightfall 400 Headlamp", "qty": 1, "priceCents": 4500, "finalSale": false },
+        { "sku": "FH-ACC-341", "name": "Roll-Top Dry Bag 10L", "qty": 1, "priceCents": 2200, "finalSale": false }
+      ],
+      "shippingCents": 695, "totalCents": 7395, "refundedCents": 0
+    },
+    {
+      "id": "FH-20416", "customerId": "C-1006", "placedDaysAgo": 8, "status": "delivered",
+      "deliveredDaysAgo": 3, "shipping": "standard", "carrier": "UPS", "tracking": "1ZFH4012041600016E",
+      "items": [
+        { "sku": "FH-CLR-522", "name": "Clearance Fleece Beanie", "qty": 1, "priceCents": 1200, "finalSale": true },
+        { "sku": "FH-APP-114", "name": "Trailhead Merino Base Layer", "qty": 1, "priceCents": 6800, "finalSale": false }
+      ],
+      "shippingCents": 0, "totalCents": 8000, "refundedCents": 0
+    },
+    {
+      "id": "FH-20417", "customerId": "C-1006", "placedDaysAgo": 76, "status": "delivered",
+      "deliveredDaysAgo": 70, "shipping": "standard", "carrier": "FedEx", "tracking": "784020417009",
+      "items": [ { "sku": "FH-FTW-420", "name": "Granite Hiking Boots", "qty": 1, "priceCents": 16500, "finalSale": false } ],
+      "shippingCents": 0, "totalCents": 16500, "refundedCents": 0
+    },
+    {
+      "id": "FH-20418", "customerId": "C-1004", "placedDaysAgo": 4, "status": "delivered",
+      "deliveredDaysAgo": 2, "shipping": "express", "carrier": "UPS", "tracking": "1ZFH4012041800018F",
+      "items": [ { "sku": "FH-ACC-302", "name": "Insulated Water Bottle", "qty": 2, "priceCents": 3200, "finalSale": false } ],
+      "shippingCents": 1495, "totalCents": 7895, "refundedCents": 0
+    }
+  ]
+}
